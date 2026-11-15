@@ -23,6 +23,7 @@
         <span>FlowCut Studio</span>
       </a>
       <a class="nav-link" href="#features">功能</a>
+      <a class="nav-link" href="#quickstart">快速上手</a>
       <a class="nav-launch" href="https://flowcut-workbench.postprep.workers.dev/workbench/">打开工作台 <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -51,16 +52,63 @@
       <div class="feature-grid">
         <article>
           <h3>在画布上组织结果</h3>
-          <p>把提示词、文本、图片和动效排在一起，用连线串起创作过程。</p>
+          <p>缩放和平移画布，把提示词、文本、图片、网页和动效放在不同节点。连线记录创作顺序，也可以从支持分支的成品节点继续写下一幕、换风格或对比方案。</p>
         </article>
         <article>
           <h3>为任务选一个模型</h3>
-          <p>在输入栏切换文本或生图，按任务调整推理等级、输出上限或图片数量。</p>
+          <p>在输入栏切换文本或生图，再按 GPT、Claude、DeepSeek、豆包等系列选择。用文本模型写文案、拆分镜或生成代码，按模型调整推理等级和输出上限。部分生图模型支持一次生成多张。</p>
         </article>
         <article>
           <h3>把作品带走</h3>
-          <p>画布留在当前设备。按需保存原图，也可以导出整张画布的 HTML。</p>
+          <p>画布和结果存入当前设备。图片可以另存原图，文本可以复制，画布成品可以导出为 HTML。支持录制的模板还可以在设备上导出视频。</p>
         </article>
+      </div>
+    </section>
+    <section class="wrap section" id="templates" aria-labelledby="template-title">
+      <div class="section-heading">
+        <h2 id="template-title">选一个起点</h2>
+        <p>空白画布适合自由搭建。想先看成品是什么样，可以直接打开六种内置模板。</p>
+      </div>
+      <dl class="template-grid">
+        <div><dt>科普动效</dt><dd>用金句、动态图表和转场讲清一个概念。</dd></div>
+        <div><dt>杂志封面</dt><dd>做一张带标题和配图的杂志感封面。</dd></div>
+        <div><dt>商家 H5</dt><dd>制作可点击的菜单或产品展示页。</dd></div>
+        <div><dt>歌词 MV</dt><dd>将歌词和节拍编排成声波动效。</dd></div>
+        <div><dt>战术 HUD</dt><dd>制作带准星、面板和脉冲的界面动效。</dd></div>
+        <div><dt>粒子可视化</dt><dd>旋转星云和粒子画面，支持拖动视角。</dd></div>
+      </dl>
+    </section>
+    <section class="wrap section" id="quickstart" aria-labelledby="start-title">
+      <div class="section-heading">
+        <h2 id="start-title">快速上手</h2>
+        <p>例如把「夜市的一晚」做成短视频分镜，再为视频生成一张封面。</p>
+      </div>
+      <ol class="steps" role="list">
+        <li><div><h3>打开工作台，新建画布</h3><p>点「空白画布」新建项目。想先体验，可以点一张内置模板卡片，直接查看本地生成的示例。</p></div></li>
+        <li><div><h3>在底部输入，选择模型和参数</h3><p>选文本模型和「规划」，输入「把夜市的一晚拆成 3 幕短视频分镜」。再切换生图模型，输入封面描述，设置图片数量后发送。</p></div></li>
+        <li><div><h3>整理节点并导出</h3><p>在画布上保留分镜和封面，用连线把它们关联起来。图片节点可以保存原图，顶部导出入口可以导出画布成品。</p></div></li>
+      </ol>
+      <a class="action primary" href="https://flowcut-workbench.postprep.workers.dev/workbench/">开始创作 <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="wrap section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading"><h2 id="faq-title">常见问题</h2></div>
+      <div class="faq-list">
+        <details>
+          <summary>需要注册账号吗？</summary>
+          <p>空白画布和本地模板可以直接使用。使用云端模型或兑换积分时，从工作台顶部用邮箱或手机号加密码注册或登录。</p>
+        </details>
+        <details>
+          <summary>云端生成怎么扣积分？</summary>
+          <p>新账号从 0 积分开始。拿到兑换码后，在顶部账号面板兑换。生图可按张计费，部分模型按实际 Token 结算。生成前会预留积分，任务失败会退回预留额度。</p>
+        </details>
+        <details>
+          <summary>换手机后还能看到以前的画布吗？</summary>
+          <p>账号积分可以随账号使用，项目保存在创作时使用的浏览器或应用里。换设备前，可以保存原图、导出 HTML 或复制同款口令。口令用于传递提示词和画布布局。</p>
+        </details>
+        <details>
+          <summary>手机怎么打开？</summary>
+          <p>用浏览器点「打开网页版」即可。Android 也可以下载 APK，下载完成后打开安装包，按系统提示完成安装。</p>
+        </details>
       </div>
     </section>
   </main>

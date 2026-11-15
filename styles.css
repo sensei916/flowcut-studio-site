@@ -39,17 +39,35 @@ h1 { margin: 0; font-size: clamp(42px, 5.1vw, 74px); font-weight: 720; letter-sp
 .preview-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; border-bottom: 1px solid var(--line); padding-inline: 15px; font-size: 12px; font-weight: 650; }
 .preview-bar span + span { color: var(--muted); font-weight: 500; }
 .workbench img { width: 100%; height: auto; background: #000; }
-.features { padding-block: 58px 72px; border-top: 1px solid var(--line); }
+.features, .section { padding-block: 58px 72px; border-top: 1px solid var(--line); }
 .section-heading h2 { margin: 0; font-size: clamp(28px, 3.7vw, 44px); letter-spacing: -.04em; }
 .section-heading p { margin: 10px 0 0; color: var(--muted); line-height: 1.6; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 32px; }
 .feature-grid article { padding-top: 17px; border-top: 1px solid var(--line); }
 .feature-grid h3 { margin: 0; font-size: 17px; }
 .feature-grid p { margin: 9px 0 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.template-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 28px; margin: 32px 0 0; }
+.template-grid div { padding: 16px 0 0; border-top: 1px solid var(--line); }
+.template-grid dt { font-size: 16px; font-weight: 650; }
+.template-grid dd { margin: 7px 0 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.steps { display: grid; gap: 0; max-width: 790px; margin: 28px 0; padding: 0; list-style: none; counter-reset: step; }
+.steps li { display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: start; gap: 14px; padding: 17px 0; border-top: 1px solid var(--line); }
+.steps li::before { counter-increment: step; content: counter(step); color: var(--accent); font-weight: 680; font-variant-numeric: tabular-nums; }
+.steps h3 { margin: 0; font-size: 17px; }
+.steps p, .faq-list p { margin: 8px 0 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.faq-list { max-width: 790px; margin-top: 24px; }
+.faq-list details { border-top: 1px solid var(--line); }
+.faq-list details:last-child { border-bottom: 1px solid var(--line); }
+.faq-list summary { padding: 16px 0; cursor: pointer; font-weight: 650; }
+.faq-list summary::marker { color: var(--accent); }
+.faq-list summary:hover { color: var(--accent); }
+.faq-list summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.faq-list p { margin: 0; padding: 0 0 17px 18px; }
 .footer { display: flex; justify-content: space-between; gap: 12px; padding-block: 25px 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; align-items: start; gap: 34px; padding-block: 54px; }
   .intro { max-width: 560px; }
+  .template-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
   .wrap { width: calc(100% - 36px); }
@@ -62,8 +80,10 @@ h1 { margin: 0; font-size: clamp(42px, 5.1vw, 74px); font-weight: 720; letter-sp
   .intro { margin-top: 17px; font-size: 16px; }
   .actions { margin-top: 22px; }
   .availability { margin-top: 11px; }
-  .features { padding-block: 36px 46px; }
+  .features, .section { padding-block: 36px 46px; }
   .feature-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 26px; }
+  .template-grid { gap: 18px 16px; margin-top: 26px; }
+  .steps li { grid-template-columns: 24px minmax(0, 1fr); gap: 10px; }
 }
 @media (max-width: 360px) {
   .wrap { width: calc(100% - 28px); }
