@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="FlowCut Studio 是一个 AI 无限画布工作台。写提示词、选模型、生成文本和图片，并把每次创作留在画布节点里。">
+  <meta property="og:title" content="FlowCut Studio · AI 无限画布">
+  <meta property="og:description" content="在一张画布上完成文本、规划与生图。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sensei916.github.io/flowcut-studio-site/">
+  <meta property="og:image" content="https://sensei916.github.io/flowcut-studio-site/assets/workbench.webp">
+  <link rel="canonical" href="https://sensei916.github.io/flowcut-studio-site/">
+  <link rel="icon" type="image/webp" href="./assets/flowcut-logo.webp">
+  <link rel="stylesheet" href="./styles.css">
+  <title>FlowCut Studio · AI 无限画布</title>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="主导航">
+      <a class="brand" href="./" aria-label="FlowCut Studio 官网首页">
+        <img src="./assets/flowcut-logo.webp" width="36" height="36" alt="">
+        <span>FlowCut Studio</span>
+      </a>
+      <a class="nav-link" href="#features">功能</a>
+      <a class="nav-launch" href="https://flowcut-workbench.postprep.workers.dev/workbench/">打开工作台 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="category">AI 无限画布</p>
+        <h1 id="hero-title">把创作放在<br>一张画布上。</h1>
+        <p class="intro">写下提示词，选一个模型，在同一张画布上完成文本、规划和生图。每次生成都留在节点里，随时接着做。</p>
+        <div class="actions">
+          <a class="action primary" href="https://flowcut-workbench.postprep.workers.dev/workbench/">打开网页版 <span aria-hidden="true">↗</span></a>
+          <a class="action secondary" href="https://flowcut-workbench.postprep.workers.dev/android/FlowCut.apk">下载 Android APK</a>
+        </div>
+        <p class="availability">本地模板可直接使用，云端模型在登录后使用。</p>
+      </div>
+      <figure class="workbench">
+        <div class="preview-bar"><span>FlowCut Studio</span><span>工作台预览</span></div>
+        <img src="./assets/workbench.webp" width="1120" height="700" alt="FlowCut Studio 工作台实拍，提示词节点连接到生成的杂志封面，底部是创作输入与模型选择。">
+      </figure>
+    </section>
+    <section class="wrap features" id="features" aria-labelledby="feature-title">
+      <div class="section-heading">
+        <h2 id="feature-title">从提示词到成品</h2>
+        <p>从空白画布开始，或用现有模板搭出第一幕。</p>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3>在画布上组织结果</h3>
+          <p>把提示词、文本、图片和动效排在一起，用连线串起创作过程。</p>
+        </article>
+        <article>
+          <h3>为任务选一个模型</h3>
+          <p>在输入栏切换文本或生图，按任务调整推理等级、输出上限或图片数量。</p>
+        </article>
+        <article>
+          <h3>把作品带走</h3>
+          <p>画布留在当前设备。按需保存原图，也可以导出整张画布的 HTML。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <span>FlowCut Studio</span>
+    <a href="https://github.com/sensei916/flowcut-studio-site">GitHub 官网仓库 <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
